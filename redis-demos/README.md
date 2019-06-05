@@ -2,8 +2,8 @@
 - Redis官网：https://redis.io/
 - Redis中文官网：http://redis.cn/  
 - Redis介绍：https://juejin.im/entry/56baa0cfc4c97100522945d3
-- Redis 设计与实现：https://redisbook.readthedocs.io/en/latest/feature/transaction.html#id4
-— 分布式和Redis：https://juejin.im/entry/5ba4eed3f265da0afc2bfb44
+- Redis 设计与实现：https://redisbook.readthedocs.io/en/latest/index.html
+- 分布式和Redis：https://juejin.im/entry/5ba4eed3f265da0afc2bfb44
 - 运维搭建Redis架构：https://juejin.im/post/5a290d5af265da4304068425
 - Redis各个版本下载：http://download.redis.io/releases/
 - Redis缓存github：https://github.com/litzhou/advanced-java
@@ -19,4 +19,4 @@
 - Redis RDB 和 AOF 持久化方案：https://www.cnblogs.com/itdragon/p/7906481.html
 - Redis 应用场景：http://www.cnblogs.com/tianciliangen/p/7942560.html
 - 分片理论：https://blog.csdn.net/qq_33589510/article/details/88190390
-- redis-trib.rb工具的使用：https://www.jianshu.com/p/21f67bd739cc
+- redis-trib.rb工具的使用：https://www.cnblogs.com/ivictor/p/9768010.html
