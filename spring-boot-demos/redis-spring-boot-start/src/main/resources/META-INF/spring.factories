@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.dxy.springboot.RedisAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.demo.springboot.RedisAutoConfiguration
