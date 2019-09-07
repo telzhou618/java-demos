@@ -1,0 +1,18 @@
+# 控制台日志高亮
+spring:
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mysql:3306/test
+    username: root
+    password: root
+mapper:
+  mappers: tk.mybatis.mapper.common.Mapper
+  notEmpty: true
+logging:
+  level:
+    com:
+      example:
+        demo: DEBUG

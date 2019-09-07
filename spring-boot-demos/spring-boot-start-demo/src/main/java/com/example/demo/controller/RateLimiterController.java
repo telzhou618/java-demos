@@ -26,7 +26,7 @@ public class RateLimiterController {
     public String test(HttpServletRequest request, HttpServletResponse response) {
         if (rateLimiter.tryAcquire()) {
             return "success";
-        }]
+        }
         throw new RuntimeException("服务器繁忙");
     }
 }
