@@ -1,0 +1,13 @@
+# 控制台日志高亮
+spring:
+  output:
+    ansi:
+      enabled: always
+  freemarker:
+    suffix: .html
+
+logging:
+  level:
+    com:
+      example:
+        demo: DEBUG
