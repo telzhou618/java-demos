@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.service.UserSingleton;
 import com.google.common.util.concurrent.RateLimiter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- *  guava 令牌通限流算法
+ * guava 令牌通限流算法
  *
  * @description: RateLimiterController
  * @author: zhougaojun
@@ -22,7 +23,7 @@ public class RateLimiterController {
     /**
      * 每秒产生10个令牌
      */
-    private static final RateLimiter rateLimiter = RateLimiter.create(10);
+    private static final RateLimiter rateLimiter = RateLimiter.create(100);
 
     @GetMapping("/limit/test")
     public String test(HttpServletRequest request, HttpServletResponse response) {
@@ -32,5 +33,10 @@ public class RateLimiterController {
             return "success";
         }
         throw new RuntimeException("服务器繁忙");
+    }
+
+    @GetMapping("/user/singleton")
+    public String getUserSingleton() {
+        return UserSingleton.getInstance().toString();
     }
 }
