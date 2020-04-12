@@ -1,4 +1,4 @@
-package com.demo.springboot.bean;
+package com.demo.config;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,9 +6,7 @@ import lombok.ToString;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * @description: JedisProperties
- * @author: zhougaojun
- * @date: 2019/07/01
+ * @author zhougaojun
  */
 @Getter
 @Setter

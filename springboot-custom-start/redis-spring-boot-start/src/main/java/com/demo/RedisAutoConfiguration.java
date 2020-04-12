@@ -1,6 +1,6 @@
-package com.demo.springboot;
+package com.demo;
 
-import com.demo.springboot.bean.RedisProperties;
+import com.demo.config.RedisProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -11,9 +11,7 @@ import org.springframework.util.StringUtils;
 import redis.clients.jedis.Jedis;
 
 /**
- * @description: RedisAutoConfiguration
- * @author: zhougaojun
- * @date: 2019/07/01
+ * @author zhougaojun
  */
 @Slf4j
 @Configuration
