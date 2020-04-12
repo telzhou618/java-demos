@@ -8,3 +8,4 @@
 - springboot-excel-import springboot 报表导入导出
 - springboot-mybatis-crud mybatis 增删改查
 - springboot-simple-demos springboot 简单实例合集,单例、限流、布隆过滤器
+- springboot-resttemplate springboot resttemplate 实例
