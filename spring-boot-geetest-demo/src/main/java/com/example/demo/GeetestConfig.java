@@ -2,8 +2,6 @@ package com.example.demo;
 
 /**
  * GeetestWeb配置文件
- * 
- *
  */
 public class GeetestConfig {
 
