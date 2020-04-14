@@ -1,0 +1,19 @@
+### 新增用户
+POST http://localhost:8080/user/add
+Content-Type: application/json
+
+{
+  "id": 0,
+  "username": "abc"
+}
+
+### 新增用户
+POST http://localhost:8080/user/add
+Content-Type: application/json
+
+{
+  "id": 123,
+  "username": "abcdef"
+}
+
+###
