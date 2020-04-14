@@ -1,0 +1,10 @@
+### 无权限测试
+GET http://localhost:8080/admin/add
+
+### 有权限测试
+GET http://localhost:8080/admin/add?username=admin
+
+### 不经过拦截器测试
+GET http://localhost:8080/test
+
+###
