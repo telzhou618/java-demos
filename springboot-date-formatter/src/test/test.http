@@ -1,0 +1,10 @@
+### 接收字符串日期转 date
+GET http://localhost:8080/date?date=2020-04-13 10:10:10
+
+### 接收字符串日期转 date
+POST http://localhost:8080/date
+Content-Type: application/x-www-form-urlencoded
+
+date=2020-04-13 10:10:10
+
+###
