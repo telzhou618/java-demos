@@ -35,7 +35,7 @@ public class MyWebConfigurer implements WebMvcConfigurer {
         @Override
         public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
             log.info("方法执行前调用此方法!");
-            // 模拟管理员邓丽
+            // 模拟管理员登录
             String username = request.getParameter("username");
             if (Objects.equals(username,"admin")) {
                 return true;
