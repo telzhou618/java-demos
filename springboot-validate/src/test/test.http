@@ -4,7 +4,8 @@ Content-Type: application/json
 
 {
   "id": 0,
-  "username": "abc"
+  "username": "abc",
+  "workTime": 10
 }
 
 ### 新增用户
@@ -13,7 +14,8 @@ Content-Type: application/json
 
 {
   "id": 123,
-  "username": "abcdef"
+  "username": "abcdef",
+  "workTime": 8
 }
 
 ###

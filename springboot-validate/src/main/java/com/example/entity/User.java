@@ -1,5 +1,6 @@
 package com.example.entity;
 
+import com.example.common.WorkOverTime;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
@@ -20,4 +21,7 @@ public class User {
     @NotBlank(message = "用户名不能为空")
     @Length(min = 4, max = 10, message = "用户名长度必须为[4~10]")
     private String username;
+
+    @WorkOverTime
+    private Integer workTime;
 }
