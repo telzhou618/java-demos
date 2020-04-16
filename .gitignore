@@ -1,6 +1,7 @@
 HELP.md
 /target/
 /.mvn/
+/logs/
 
 ### STS ###
 .apt_generated
