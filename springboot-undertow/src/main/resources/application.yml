@@ -1,0 +1,8 @@
+server:
+  undertow:
+    accesslog:
+      enabled: true # 打开undertow的访问日志，默认false
+      dir: log
+    io-threads: 2 # 创建工作线程的I/O线程数
+    worker-threads: 16 # 工作线程数，默认为I/O线程的8倍
+    max-http-post-size: 0 #POST请求最大程度
