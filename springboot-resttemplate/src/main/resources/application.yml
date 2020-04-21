@@ -1,0 +1,6 @@
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          client: debug #设置RestTemplate日志级别为debug
