@@ -19,7 +19,7 @@ public class RestTemplateGetTest {
     private static RestTemplate restTemplate;
 
     @BeforeClass
-    public static void beforeClass() throws Exception {
+    public static void beforeClass() {
         restTemplate = new RestTemplate();
     }
 

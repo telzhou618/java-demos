@@ -26,7 +26,7 @@ public class RestTemplatePostTest {
     private static final String URL = "http://localhost:8080";
 
     @BeforeClass
-    public static void beforeClass() throws Exception {
+    public static void beforeClass() {
         restTemplate = new RestTemplate();
     }
 
@@ -65,7 +65,7 @@ public class RestTemplatePostTest {
     }
 
     /**
-     *  表单提交,HttpEntity 方式
+     * 表单提交,HttpEntity 方式
      */
     @Test
     public void postForObject4() {
