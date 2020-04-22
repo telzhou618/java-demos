@@ -17,6 +17,6 @@ public class StringUtilsTests {
      */
     @Test
     public void abbreviate() {
-        log.info(StringUtils.abbreviate("截取一段文本测试", 5));
+        log.info(StringUtils.abbreviate("截取一段文本测试", 6));
     }
 }
