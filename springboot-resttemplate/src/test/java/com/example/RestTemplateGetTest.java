@@ -19,6 +19,9 @@ public class RestTemplateGetTest extends SpringTests {
     @Autowired
     private RestTemplate restTemplate;
 
+    /**
+     * 普通GET请求
+     */
     @Test
     public void getForObject1() {
         String result = restTemplate.getForObject("https://suggest.taobao.com/sug?code=utf-8&q=11", String.class);
@@ -53,11 +56,9 @@ public class RestTemplateGetTest extends SpringTests {
     public void getForObject4() {
         URI uri = UriComponentsBuilder.fromHttpUrl("https://suggest.taobao.com/sug")
                 .queryParam("code", "utf-8")
-                .queryParam("q", "iphone")
+                .queryParam("q", "手机")
                 .build().toUri();
         String result = restTemplate.getForObject(uri, String.class);
         log.info(result);
     }
-
-
 }
