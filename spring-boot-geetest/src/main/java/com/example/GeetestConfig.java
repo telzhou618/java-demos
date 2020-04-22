@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example;
 
 /**
  * GeetestWeb配置文件

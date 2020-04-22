@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.example.controller;
 
-import com.example.demo.GeetestConfig;
-import com.example.demo.GeetestLib;
+import com.example.GeetestConfig;
+import com.example.GeetestLib;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
