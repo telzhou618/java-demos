@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>springboot-webflux-demo</artifactId>
+    <artifactId>springboot-webflux</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-webflux-demo</name>
+    <name>springboot-webflux</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
