@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
@@ -100,5 +101,17 @@ public class RestTemplatePostTest {
         HttpEntity entity = new HttpEntity(user, headers);
         String result = restTemplate.postForObject(URL + "/user/json/add", entity, String.class);
         log.info(result);
+    }
+
+    /**
+     * 返回 ResponseEntity
+     */
+    @Test
+    public void postForObject7() {
+        User user = new User().setId(1).setUsername("tom");
+        ResponseEntity<User> responseEntity = restTemplate.postForEntity(URL + "/user/json/add", user, User.class);
+        log.info(""+responseEntity.getStatusCode());
+        log.info(""+responseEntity.getStatusCodeValue());
+        log.info(responseEntity.getBody().toString());
     }
 }
