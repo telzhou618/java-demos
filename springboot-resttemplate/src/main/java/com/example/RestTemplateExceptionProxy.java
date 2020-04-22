@@ -20,7 +20,7 @@ public class RestTemplateExceptionProxy extends RestTemplate {
             return doErrorResponseEntity(e);
         }
     }
-
+    
     @Override
     public <T> ResponseEntity<T> getForEntity(String url, Class<T> responseType, Map<String, ?> uriVariables) {
         try {
@@ -38,7 +38,6 @@ public class RestTemplateExceptionProxy extends RestTemplate {
             return doErrorResponseEntity(e);
         }
     }
-
 
     @Override
     public <T> ResponseEntity<T> postForEntity(String url, Object request, Class<T> responseType, Object... uriVariables) {
