@@ -1,8 +1,8 @@
 package com.example;
 
 import lombok.extern.slf4j.Slf4j;
+import org.junit.BeforeClass;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -14,10 +14,14 @@ import java.util.Map;
  * @author zhougaojun
  */
 @Slf4j
-public class RestTemplateGetTest extends SpringTests {
+public class RestTemplateGetTest {
 
-    @Autowired
-    private RestTemplate restTemplate;
+    private static RestTemplate restTemplate;
+
+    @BeforeClass
+    public static void beforeClass() throws Exception {
+        restTemplate = new RestTemplate();
+    }
 
     /**
      * 普通GET请求
