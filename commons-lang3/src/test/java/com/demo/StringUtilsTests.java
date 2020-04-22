@@ -17,7 +17,7 @@ public class StringUtilsTests extends StringUtils {
         // 缩略字符串的一些高级用法 ，超过用...表示，默认截取长度不能小于3,否则抛出异常。
         log.info(abbreviate("截取一段文本测试", 6));
         // 用后面字符串包装前面字符串
-        log.info(wrap("截取一段文本测试", "\'"));
+        log.info(wrap("包装字符串", "\'"));
         // 转大写
         log.info(upperCase("hello"));
         // 首字母大写
