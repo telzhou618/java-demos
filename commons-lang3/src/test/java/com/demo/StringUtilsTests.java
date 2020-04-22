@@ -5,6 +5,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 /**
+ * StringUtils demo
+ *
  * @author zhougaojun
  */
 @Slf4j
