@@ -22,6 +22,7 @@ public class FileUtilsTests extends FileUtils {
         log.info(byteCountToDisplaySize(100830001L));
         // 获取临时目录
         log.info(getTempDirectory().getAbsolutePath());
+        // 获取临时目录
         log.info(getTempDirectoryPath());
     }
 
