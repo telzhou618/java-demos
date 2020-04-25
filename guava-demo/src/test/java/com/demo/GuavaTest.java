@@ -68,12 +68,6 @@ public class GuavaTest {
         log.info(HtmlEscapers.htmlEscaper().escape(html));
 
         // 输出 &lt;a href=&quot;http://www.test.cn&quot;&gt;测试&lt;/a&gt;
-        log.info(htmlEscape(html,HtmlEscapers.htmlEscaper().asFunction()));
+        log.info(HtmlEscapers.htmlEscaper().asFunction().apply(html));
     }
-
-    private String htmlEscape(String html, Function<String, String> function) {
-        return function.apply(html);
-    }
-
-
 }
