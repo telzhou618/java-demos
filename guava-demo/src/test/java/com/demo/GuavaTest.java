@@ -27,6 +27,8 @@ public class GuavaTest {
     public void testStopWatcher() throws Exception {
         Stopwatch stopwatch = Stopwatch.createStarted();
         TimeUnit.SECONDS.sleep(2);
+        log.info("程序运行结束,耗时:{}", stopwatch);
+        TimeUnit.SECONDS.sleep(3);
         log.info("程序运行结束,耗时:{}", stopwatch.stop());
     }
 
