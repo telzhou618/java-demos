@@ -23,10 +23,17 @@ public class BaseResponseBodyAdvice implements ResponseBodyAdvice {
 
     @Override
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
-        if (!(body instanceof Result)) {
-            body = Result.success(body);
+        Result result;
+        if (body instanceof Result) {
+            result = (Result) body;
+        } else {
+            result = Result.success(body);
         }
-        log.debug("Response data -> {}", JSON.toJSONString(body));
-        return body;
+        if (!result.isSuccess()) {
+            log.debug("Response data -> {}", JSON.toJSONString(body));
+        } else {
+            log.error("Response error -> {}", result);
+        }
+        return result;
     }
 }
