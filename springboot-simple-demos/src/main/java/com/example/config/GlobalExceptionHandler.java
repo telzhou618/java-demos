@@ -4,6 +4,7 @@ import com.example.common.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -12,11 +13,12 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Slf4j
 @ControllerAdvice
+@ResponseBody
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(value = RuntimeException.class)
-    public Result runtimeException(HttpServletRequest request, RuntimeException e) {
+    @ExceptionHandler(value = Exception.class)
+    public Result baseException(HttpServletRequest request, Exception e) {
         log.error("error -> {}", e.getMessage(), e);
-        return Result.failure(500, "系统繁忙");
+        return Result.failure(500, "系统内部错误");
     }
 }
