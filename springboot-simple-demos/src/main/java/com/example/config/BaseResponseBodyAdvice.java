@@ -29,7 +29,7 @@ public class BaseResponseBodyAdvice implements ResponseBodyAdvice {
         } else {
             result = Result.success(body);
         }
-        if (!result.isSuccess()) {
+        if (result.isSuccess()) {
             log.debug("Response data -> {}", JSON.toJSONString(body));
         } else {
             log.error("Response error -> {}", result);
