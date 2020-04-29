@@ -1,0 +1,23 @@
+### user list
+GET http://localhost:8080/user/list
+
+### user get
+GET http://localhost:8080/user/get?userId=1
+
+### user get
+GET http://localhost:8080/user/get
+
+### user exception
+GET http://localhost:8080/user/exception
+
+
+### user add
+POST http://localhost:8080/user/add
+Content-Type: application/json
+
+{
+  "username": {{$randomInt}},
+  "password": {{$timestamp}}
+}
+###
+
