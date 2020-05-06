@@ -17,6 +17,9 @@ public class RateLimiterTest {
     private static RateLimiter rateLimiter = RateLimiter.create(1);
     private static Executor executor = Executors.newFixedThreadPool(5);
 
+    /**
+     * 简单限流操作
+     */
     @Test
     public void test() {
         for (int x = 0; x < 5; x++) {
