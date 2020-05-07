@@ -2,6 +2,7 @@ package com.example.controller;
 
 import com.example.entity.User;
 import com.example.mapper.UserMapper;
+import com.example.util.RedisUtil;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -17,10 +18,16 @@ import java.util.List;
 public class UserCrudController {
 
     private UserMapper userMapper;
+    private RedisUtil redisUtil;
 
     @GetMapping("/user/list")
     public List<User> userList() {
-        return userMapper.selectAll();
+        List<User> userList = redisUtil.get("userList");
+        if (userList == null) {
+            userList = userMapper.selectAll();
+            redisUtil.set("userList", userList, 30);
+        }
+        return userList;
     }
 
     @PostMapping("/user/add")

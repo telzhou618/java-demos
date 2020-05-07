@@ -6,6 +6,9 @@ spring:
     password: root
   jackson:
     default-property-inclusion: non_null
+  # redis 配置
+  redis:
+    host: my-host.com
 mapper:
   mappers: tk.mybatis.mapper.common.Mapper
   notEmpty: true
@@ -13,3 +16,4 @@ mapper:
 logging:
   level:
     com.example: debug
+
