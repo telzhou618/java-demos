@@ -1,4 +1,9 @@
+env: ${spring.profiles.active}
 spring:
+  application:
+    name: springboot-simple-app-${env}
+  profiles:
+    active: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://my-host.com:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
@@ -13,7 +18,15 @@ mapper:
   mappers: tk.mybatis.mapper.common.Mapper
   notEmpty: true
 
-logging:
-  level:
-    com.example: debug
-
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: ['health','info']
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0

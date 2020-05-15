@@ -20,4 +20,8 @@ Content-Type: application/json
   "password": {{$timestamp}}
 }
 ###
+GET http://localhost:8080/actuator/health
+###
+GET http://localhost:8080/actuator/info
+###
 
