@@ -1,4 +1,4 @@
-### 健康检查
+### 总览
 GET http://localhost:8080/actuator
 ### 健康检查
 GET http://localhost:8080/actuator/health
