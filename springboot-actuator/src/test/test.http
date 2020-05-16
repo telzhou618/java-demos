@@ -16,4 +16,13 @@ GET http://localhost:8080/actuator/beans
 ### env
 GET http://localhost:8080/actuator/env
 
+### mappings
+GET http://localhost:8080/actuator/mappings
+
+
+### 度量指标类信息
+### metrics
+GET http://localhost:8080/actuator/metrics
+
+
 ###
