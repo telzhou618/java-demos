@@ -1,0 +1,19 @@
+### 健康检查
+GET http://localhost:8080/actuator
+### 健康检查
+GET http://localhost:8080/actuator/health
+### 自定义 info
+GET http://localhost:8080/actuator/info
+
+### 应用配置信息
+
+### 配置
+GET http://localhost:8080/actuator/configprops
+
+### bean信息
+GET http://localhost:8080/actuator/beans
+
+### env
+GET http://localhost:8080/actuator/env
+
+###

@@ -1,8 +1,17 @@
+spring:
+  application:
+    name: springboot-actuator-app
 management:
   endpoints:
     web:
       exposure:
-        include: ['*']
+        include: ['*'] # or ['beans','info']
   endpoint:
     health:
-      show-details: always
+      show-details: always # 显示健康检查详细信息
+
+ # 定义info信息，通过 http://localhost:8080/actuator/info 读取
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0
