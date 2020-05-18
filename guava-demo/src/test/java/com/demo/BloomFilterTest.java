@@ -20,7 +20,7 @@ public class BloomFilterTest {
             bloomFilter.put(i);
         }
         // 判断是否存在
-        System.out.println(bloomFilter.mightContain(11));
-        System.out.println(bloomFilter.mightContain(1002));
+        System.out.println(bloomFilter.mightContain(11)); // true
+        System.out.println(bloomFilter.mightContain(1002)); // false
     }
 }
