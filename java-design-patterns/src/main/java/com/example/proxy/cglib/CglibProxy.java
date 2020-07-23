@@ -7,6 +7,8 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
+ * cglib 动态代理,可以代理普通类
+ *
  * @author jameszhou
  */
 public class CglibProxy implements MethodInterceptor {
