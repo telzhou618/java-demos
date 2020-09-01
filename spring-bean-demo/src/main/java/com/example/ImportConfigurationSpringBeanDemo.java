@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Import;
 
-/**
+/** Configuration 注册 bean
  * @author zhougaojun
  */
 @Import(UserConfiguration.class)
