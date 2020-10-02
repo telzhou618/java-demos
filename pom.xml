@@ -43,5 +43,6 @@
         <module>java-test</module>
         <module>redis-demos</module>
         <module>mq-demos</module>
+        <module>springboot-sharding-jdbc</module>
     </modules>
 </project>
