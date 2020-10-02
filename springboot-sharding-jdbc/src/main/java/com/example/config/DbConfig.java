@@ -36,6 +36,7 @@ public class DbConfig {
         shardingRuleConfig.getTableRuleConfigs().add(orderTableRuleConfig);
 
         Properties properties = new Properties();
+        // 显示SQL日志，INFO级别
         properties.setProperty("sql.show", "true");
 
         return ShardingDataSourceFactory.createDataSource(createDataSourceMap(dbProperties), shardingRuleConfig, properties);
