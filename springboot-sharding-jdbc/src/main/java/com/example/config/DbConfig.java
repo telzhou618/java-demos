@@ -29,7 +29,7 @@ public class DbConfig {
 
         // 配置Order表分库 + 分表策略
         TableRuleConfiguration orderTableRuleConfig = new TableRuleConfiguration("tb_order","db0${1..2}.tb_order0${1..2}");
-        orderTableRuleConfig.setDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("id", new MyPreciseShardingAlgorithm()));
+        orderTableRuleConfig.setDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("id", this::doSharding));
         orderTableRuleConfig.setTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("id", new MyPreciseShardingAlgorithm()));
 
         ShardingRuleConfiguration shardingRuleConfig = new ShardingRuleConfiguration();
@@ -63,5 +63,11 @@ public class DbConfig {
             List<String> availableTargetNameList = availableTargetNames.stream().sorted().collect(Collectors.toList());
             return availableTargetNameList.get(index);
         }
+    }
+
+    public String doSharding(Collection<String> availableTargetNames, PreciseShardingValue<Long> shardingValue) {
+        Integer index = Math.toIntExact(shardingValue.getValue() % availableTargetNames.size());
+        List<String> availableTargetNameList = availableTargetNames.stream().sorted().collect(Collectors.toList());
+        return availableTargetNameList.get(index);
     }
 }
