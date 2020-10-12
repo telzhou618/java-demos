@@ -76,8 +76,12 @@ public class DbConfig {
 
                 Map<String, Collection<Integer>> collectionMap = shardingValue.getColumnNameAndShardingValuesMap();
 
-                Integer userId = collectionMap.get("user_id").stream().findFirst().orElse(0);
-                Integer areaId = collectionMap.get("area_id").stream().findFirst().orElse(0);
+                Integer userId = collectionMap.getOrDefault("user_id",Collections.emptyList()).stream().findFirst().orElse(0);
+                Integer areaId = collectionMap.getOrDefault("area_id",Collections.emptyList()).stream().findFirst().orElse(0);
+                // 操作条件没有userId或areaId时全款扫描
+                if(userId == 0 || areaId == 0){
+                    return availableTargetNames;
+                }
                 Integer index = (userId + areaId) % availableTargetNames.size();
                 List<String> availableTargetNameList = (List<String>) availableTargetNames.stream().sorted().collect(Collectors.toList());
                 return Collections.singleton(availableTargetNameList.get(index));
