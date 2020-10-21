@@ -14,6 +14,7 @@ import java.util.HashMap;
 
 /**
  * 使用Get的方式返回challenge和capthca_id,此方式以实现前后端完全分离的开发模式
+ * @author zhougaojun
  */
 @RestController
 public class StartCaptchaController {
