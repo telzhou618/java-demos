@@ -44,5 +44,6 @@
         <module>redis-demos</module>
         <module>mq-demos</module>
         <module>springboot-sharding-jdbc</module>
+        <module>springboot-aop</module>
     </modules>
 </project>
