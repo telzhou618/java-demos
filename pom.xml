@@ -34,6 +34,8 @@
         <module>springboot-cors</module>
         <module>springboot-apollo</module>
         <module>springboot-actuator</module>
+        <module>springboot-sharding-jdbc</module>
+        <module>springboot-aop</module>
         <module>xmemcached-demo</module>
         <module>commons-io</module>
         <module>commons-lang3</module>
@@ -43,7 +45,6 @@
         <module>java-test</module>
         <module>redis-demos</module>
         <module>mq-demos</module>
-        <module>springboot-sharding-jdbc</module>
-        <module>springboot-aop</module>
+        <module>spring-demos</module>
     </modules>
 </project>
