@@ -17,7 +17,7 @@ import java.util.Map;
 public class PathPatternTest {
     private static final List<RedirectPattern> REDIRECT_PATTERN_DATA = new ArrayList<>();
 
-    private static final String _3G_ROOT = "http://3g.dxy.cn/bbs";
+    private static final String _3G_ROOT = "http://3g.baidu.cn/bbs";
 
     static {
         REDIRECT_PATTERN_DATA.add(new RedirectPattern("/pc/home*", "/"));
@@ -52,7 +52,7 @@ public class PathPatternTest {
 
         if (pathPattern.matches(pathContainer)) {
             Map<String, String> uriVariables = pathPattern.matchAndExtract(pathContainer).getUriVariables();
-            String http = UriComponentsBuilder.fromUriString("http://3g.dxy.cn/bbs/topic/{postId}").buildAndExpand(uriVariables).toString();
+            String http = UriComponentsBuilder.fromUriString("http://3g.baidu.cn/bbs/topic/{postId}").buildAndExpand(uriVariables).toString();
             System.out.println(http);
         }
 
