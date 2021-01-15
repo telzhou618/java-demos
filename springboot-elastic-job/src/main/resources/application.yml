@@ -1,4 +1,0 @@
-elaticjob:
-  zookeeper:
-    server-lists: my-host.com:2181
-    namespace: bounter-job

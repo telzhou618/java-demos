@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
     <artifactId>java-demos</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <packaging>pom</packaging>
 
     <properties>
@@ -17,34 +17,11 @@
     </properties>
 
     <modules>
-        <module>spring-boot-geetest</module>
-        <module>springboot-webflux</module>
-        <module>springboot-validate</module>
-        <module>springboot-undertow</module>
-        <module>springboot-template</module>
-        <module>springboot-simple-demos</module>
-        <module>springboot-resttemplate</module>
-        <module>springboot-mybatis-crud</module>
-        <module>springboot-interceptor</module>
-        <module>springboot-freemarker</module>
-        <module>springboot-excel-import</module>
-        <module>springboot-elastic-job</module>
-        <module>springboot-date-formatter</module>
-        <module>springboot-custom-start</module>
-        <module>springboot-cors</module>
-        <module>springboot-apollo</module>
-        <module>springboot-actuator</module>
-        <module>springboot-sharding-jdbc</module>
-        <module>springboot-aop</module>
-        <module>xmemcached-demo</module>
         <module>commons-io</module>
         <module>commons-lang3</module>
         <module>guava-demo</module>
-        <module>hystrix-demo</module>
         <module>java-design-patterns</module>
         <module>java-test</module>
-        <module>redis-demos</module>
-        <module>mq-demos</module>
-        <module>spring-demos</module>
+        <module>xmemcached-demo</module>
     </modules>
 </project>

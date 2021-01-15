@@ -1,3 +1,0 @@
-spring:
-  freemarker:
-    suffix: .html # 默认是.ftlh,这里修改成.html
