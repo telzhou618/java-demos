@@ -12,7 +12,7 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
+/** 连接池
  * @author zhougaojun
  * @since 2021/7/29
  */
