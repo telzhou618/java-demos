@@ -12,7 +12,9 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-/** 连接池
+/**
+ * 连接池
+ *
  * @author zhougaojun
  * @since 2021/7/29
  */
@@ -34,7 +36,7 @@ public class Pool2Main {
             Connection connection = pool.borrowObject();
             System.out.println(connection);
             // 归还连接
-            //  pool.returnObject(connection);
+            pool.returnObject(connection);
         }
 
     }
