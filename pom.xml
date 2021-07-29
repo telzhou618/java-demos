@@ -23,6 +23,6 @@
         <module>java-design-patterns</module>
         <module>java-test</module>
         <module>xmemcached-demo</module>
-        <module>jmeter-auto-sign-core</module>
+        <module>java-design-patterns</module>
     </modules>
 </project>
