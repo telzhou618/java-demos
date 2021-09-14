@@ -14,6 +14,11 @@ import java.nio.charset.StandardCharsets;
 public class DigestUtilsTest {
 
     @Test
+    public void testMd5(){
+        System.out.println(DigestUtils.md5Hex("123456"));
+    }
+
+    @Test
     public void base64Test(){
         String bs =  Base64.encodeBase64String("hello".getBytes(StandardCharsets.UTF_8));
         System.out.println(bs);
