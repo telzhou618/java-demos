@@ -2,7 +2,6 @@ package com.example.jvm;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 /**
  * VM Args：-Xms8m -Xmx8m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=path
@@ -19,7 +18,6 @@ public class HeapOOMDemo {
         List<OOMObject> list = new ArrayList<>();
         while (true) {
             list.add(new OOMObject());
-            TimeUnit.SECONDS.sleep(3);
             System.out.println("添加元素成功");
         }
     }
