@@ -2,7 +2,7 @@ package com.example.jvm;
 
 import java.util.concurrent.TimeUnit;
 
-/**
+/** 制造死锁程序
  * @author zhougaojun
  * @since 2021/10/9
  */
