@@ -27,7 +27,7 @@ public class LruCache {
                 boolean bool = size() > capacity; // 判断是否超过容量
                 if (bool) {
                     System.out.println("容量不足，淘汰数据,key=" + eldest.getKey());
-                    eldestKey = eldest.getKey();
+                    eldestKey = eldest.getKey(); // 设置要删除的key
                 }
                 return bool;
             }
@@ -44,6 +44,10 @@ public class LruCache {
         removeEldestKey(key);
     }
 
+    /**
+     * 删除要淘汰的key
+     * @param key
+     */
     private void removeEldestKey(String key) {
         keyMap.put(key, key);
         if (eldestKey != null) {
