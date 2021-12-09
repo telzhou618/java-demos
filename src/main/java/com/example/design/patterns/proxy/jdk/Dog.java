@@ -5,7 +5,7 @@ package com.example.design.patterns.proxy.jdk;
  */
 public class Dog implements Animal {
     @Override
-    public void run() {
+    public void test() {
         System.out.println("dog 会跑!");
     }
 }

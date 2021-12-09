@@ -1,4 +1,4 @@
-package com.example.design.patterns.proxy.jdk;
+package com.example.design.patterns.proxy.jdk.api;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

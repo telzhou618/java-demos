@@ -7,7 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Animal animal = new JdkDynamicProxy(new Dog()).getProxy();
-        animal.run();
+        JdkDynamicProxyFactory proxyFactory = new JdkDynamicProxyFactory(new Dog());
+        Animal animal = (Animal) proxyFactory.getProxy();
+        animal.test();
     }
 }

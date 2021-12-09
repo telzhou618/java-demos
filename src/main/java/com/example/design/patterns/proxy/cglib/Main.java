@@ -5,11 +5,8 @@ package com.example.design.patterns.proxy.cglib;
  */
 public class Main {
     public static void main(String[] args) {
-        CglibProxy proxy = new CglibProxy();
-        Person person = (Person) proxy.getProxy(Person.class);
+        CglibProxyFactory proxyFactory = new CglibProxyFactory(new Person());
+        Person person = (Person) proxyFactory.getProxy();
         person.sayHello();
-        System.out.println("-----------------------------------");
-        String result = person.sendMessage("hello");
-        System.out.println(result);
     }
 }

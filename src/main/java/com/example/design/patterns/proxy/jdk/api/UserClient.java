@@ -1,4 +1,4 @@
-package com.example.design.patterns.proxy.jdk;
+package com.example.design.patterns.proxy.jdk.api;
 
 /**
  * @author zhougaojun

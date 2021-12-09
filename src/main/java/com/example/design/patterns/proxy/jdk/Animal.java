@@ -4,6 +4,5 @@ package com.example.design.patterns.proxy.jdk;
  * @author jameszhou
  */
 public interface Animal {
-
-    void run();
+    void test();
 }
